@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.footer {
+    padding: 108px 0 152px;
+    .socialContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 42px;
+        border-bottom: 0.5px solid $lineColor;
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .list {
+            display: flex;
+            .item {
+                margin-left: 28px;
+                .icon {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+    .footerBottom {
+        display: flex;
+        justify-content: center;
+        padding-top: 42px;
+        .aboutUs {
+            padding-top: 10px;
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 22px;
+            }
+            .address {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .addressName {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .info {
+            padding-top: 10px;
+            border-left: 0.5px solid $lineColor;
+            padding-left: 157px;
+            margin-left: 157px;
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 22px;
+            }
+            .list {
+                .item {
+                    margin: 10px 0;
+                    .link {
+                        padding-left: 20px;
+                        display: block;
+                        position: relative;
+                        cursor: pointer;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url('../../assets/arrowRight.svg');
+                            width: 10px;
+                            height: 20px;
+                            left: -1px;
+                            bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

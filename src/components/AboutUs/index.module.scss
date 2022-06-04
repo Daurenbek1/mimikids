@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+.aboutUs {
+    background: $white;
+    padding: 20px 60px 60px 60px;
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .subTitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .text {
+        margin-bottom: 20px;
+        &::after {
+            margin-bottom: 0;
+        }
+    }
+}

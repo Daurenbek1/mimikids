@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.form {
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    display: flex;
+    max-width: 271px;
+    position: relative;
+    padding-bottom: 12px;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 271px;
+        height: 0.5px;
+        background-color: $lineColor;
+        left: 0;
+        bottom: 0;
+    }
+    .input {
+        background: $white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    
+    .button {
+        cursor: pointer;
+        margin-left: 6px;
+        border: none;
+        height: auto;
+        padding: 5px;
+        background: $yellow;
+        border-radius: 5px;
+        width: 59px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
