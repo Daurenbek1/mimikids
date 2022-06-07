@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: $green;
+    background-size: 80%, 80%;
+    border-radius: 50%;
+    opacity: 1;
+}

@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     background: $white;
+    border: 0.5px solid $lineColor;
     .list {
         margin-right: 40px;
         .link {

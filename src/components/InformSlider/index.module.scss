@@ -1,0 +1,27 @@
+.inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 20px 0;
+    .item {
+        min-height: 156px;
+        border-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:nth-child(1) {
+            background-image: url(../../assets/informSlider/1.jpg);
+            grid-column-end: span 1;
+            grid-row-end: span 1;
+        }
+        &:nth-child(2) {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+        }
+        &:nth-child(3) {
+            background-image: url(../../assets/informSlider/2.jpg);
+            grid-column-end: span 1;
+            grid-row-end: span 1;
+        }
+    }
+}
