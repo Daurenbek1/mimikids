@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.form {
+    background-color: $background;
+    padding: 40px 0;
+    border-radius: 15px;
+    max-width: 500px;
+    .container {
+        margin: 0 50px;
+    }
+}

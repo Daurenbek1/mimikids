@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.button {
+    background: $green;
+    color: $white;
+    border-radius: 5px;
+    padding: 10px 0;
+    border: none;
+    text-align: center;
+}
