@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './index.module.scss';
 
-export const Modal = ({children, visible, setVisible}) => {
+export const Modal = ({children, visible, setModal}) => {
 
     const rootClasses = [styles.modal]
 
@@ -11,8 +11,8 @@ export const Modal = ({children, visible, setVisible}) => {
     }
 
     return (
-        <div className={rootClasses.join(' ')}>
-            <div className={styles.modalContent}>
+        <div className={rootClasses.join(' ')} onClick={() => setModal(false)}>
+            <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
                 {children}
             </div>
         </div>

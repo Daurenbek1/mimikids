@@ -9,7 +9,7 @@ import { Basket } from "../Basket";
 
 import styles from './index.module.scss';
 
-export const Header = () => {
+export const Header = (props) => {
     return (
         <header>
             <div className={styles.headerTop}>
@@ -19,7 +19,7 @@ export const Header = () => {
                 </div>
                 <Logo />
                 <div>
-                    <CallBack />
+                    <CallBack setModal={props.setModal}/>
                     <Basket />
                 </div>
             </div>
