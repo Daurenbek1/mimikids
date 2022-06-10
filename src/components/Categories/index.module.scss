@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.inner {
+    max-width: 320px;
+
+    .title {
+        font-size: 24px;
+        font-weight: 400;
+        background: $green;
+        color: $white;
+        text-align: center;
+        padding: 14px 0;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .categories {
+        padding: 0;
+
+        .item {
+            font-size: 18px;
+            padding: 15px;
+            border: 0.5px solid $lineColor;
+            cursor: pointer;
+            position: relative;
+            transition: all .2s ease;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('./../../../public/assets/Icons/arrowRight.svg');
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                right: 10px;
+                top: calc(50% - 10px);
+                transition: all .2s ease;
+            }
+
+            &:hover {
+                color: $white;
+                background: $yellow;
+
+                &::after {
+                    background-image: url('./../../../public/assets/Icons/arrowRightHover.svg');
+                }
+            }
+        }
+    }
+}

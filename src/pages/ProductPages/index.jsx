@@ -1,8 +1,15 @@
 import React from "react";
 
+import styles from './index.module.scss';
+
+import { Categories } from "../../components/Categories";
+
+
 const ProductPages = () => {
     return (
-        <h1>ProductPages</h1>
+        <div className={styles.products}>
+            <Categories />
+        </div>
     )
 }
 
