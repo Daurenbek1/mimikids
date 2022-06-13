@@ -10,7 +10,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         &:nth-child(1) {
-            background-image: url(../../assets/informSlider/1.jpg);
+            background-image: url('../../../public/assets/informSlider/1.jpg');
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
@@ -19,7 +19,7 @@
             grid-row-end: span 2;
         }
         &:nth-child(3) {
-            background-image: url(../../assets/informSlider/2.jpg);
+            background-image: url('../../../public/assets/informSlider/2.jpg');
             grid-column-end: span 1;
             grid-row-end: span 1;
         }

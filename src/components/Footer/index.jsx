@@ -3,9 +3,6 @@ import React from "react";
 import { Phone } from '../Phone';
 import { MapIcon } from '../svg/MapIcon'
 
-import instagramIcon from '../../assets/Instagram.svg';
-import telegramIcon from '../../assets/Telegram.svg';
-
 import styles from './index.module.scss';
 
 export const Footer = () => {
@@ -14,8 +11,8 @@ export const Footer = () => {
             <div className={styles.socialContainer}>
                 <h4 className={styles.title}>MIMIKIDS в соц.сетях</h4>
                 <ul className={styles.list}>
-                    <li className={styles.item}><a href="https://instagram.com/mimikids_shym?igshid=YmMyMTA2M2Y="><img className={styles.icon} src={instagramIcon}/></a></li>
-                    <li className={styles.item}><a href="#"><img className={styles.icon} src={telegramIcon}/></a></li>
+                    <li className={styles.item}><a href="https://instagram.com/mimikids_shym?igshid=YmMyMTA2M2Y="><img className={styles.icon} src='/assets/Icons/Instagram.svg'/></a></li>
+                    <li className={styles.item}><a href="#"><img className={styles.icon} src='/assets/Icons/Telegram.svg'/></a></li>
                 </ul>
             </div>
             <div className={styles.footerBottom}>
